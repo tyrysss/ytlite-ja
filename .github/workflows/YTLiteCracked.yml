@@ -283,17 +283,17 @@ jobs:
           make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           mv packages/*.deb ${{ github.workspace }}/youchoose.deb
 
-      - name: Build YTSilentVote
-        run: |
-          cd YTSilentVote
-          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          mv packages/*.deb ${{ github.workspace }}/ytnovote.deb  
+      #- name: Build YTSilentVote
+      #  run: |
+      #    cd YTSilentVote
+      #    make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+      #    mv packages/*.deb ${{ github.workspace }}/ytnovote.deb  
 
-      - name: Build YouShare
-        run: |
-          cd YouShare
-          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          mv packages/*.deb ${{ github.workspace }}/youshare.deb
+      #- name: Build YouShare
+      #  run: |
+      #    cd YouShare
+      #    make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+      #    mv packages/*.deb ${{ github.workspace }}/youshare.deb
           
       #- name: Build Gonerino
       #  run: |
