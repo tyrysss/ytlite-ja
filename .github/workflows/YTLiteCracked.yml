@@ -124,8 +124,8 @@ jobs:
       - name: Clone YTUHD
         run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YTUHD.git
            
-      - name: Clone Return-YouTube-Dislikes
-        run: git clone --quiet --depth=1 https://github.com/PoomSmart/Return-YouTube-Dislikes.git
+      #- name: Clone Return-YouTube-Dislikes
+      #  run: git clone --quiet --depth=1 https://github.com/PoomSmart/Return-YouTube-Dislikes.git
 
       - name: Clone YouGroupSettings
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/YouGroupSettings.git
@@ -161,14 +161,14 @@ jobs:
       - name: Clone YouChooseQuality
         run: git clone --quiet https://github.com/PoomSmart/YouChooseQuality.git
 
-      - name: Clone YTSilentVote
-        run: git clone --quiet --depth=1 https://github.com/PoomSmart/YTSilentVote.git
+      #- name: Clone YTSilentVote
+      #  run: git clone --quiet --depth=1 https://github.com/PoomSmart/YTSilentVote.git
 
-      - name: Clone YouShare
-        run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YouShare.git
+      #- name: Clone YouShare
+      #  run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YouShare.git
 
-      - name: Clone Gonerino
-        run: git clone --quiet --depth=1 https://github.com/castdrian/Gonerino.git
+      #- name: Clone Gonerino
+      #  run: git clone --quiet --depth=1 https://github.com/castdrian/Gonerino.git
 
       - name: Clone YTweaks
         run: git clone --quiet --depth=1 https://github.com/fosterbarnes/YTweaks.git
@@ -209,11 +209,11 @@ jobs:
           make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           mv packages/*.deb ${{ github.workspace }}/ytuhd.deb
 
-      - name: Build Return-YouTube-Dislikes
-        run: |
-          cd Return-YouTube-Dislikes
-          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          mv packages/*.deb ${{ github.workspace }}/ryd.deb
+      #- name: Build Return-YouTube-Dislikes
+      #  run: |
+      #    cd Return-YouTube-Dislikes
+      #    make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+      #    mv packages/*.deb ${{ github.workspace }}/ryd.deb
 
       - name: Build YouGroupSettings
         run: |
@@ -295,11 +295,11 @@ jobs:
           make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           mv packages/*.deb ${{ github.workspace }}/youshare.deb
           
-      - name: Build Gonerino
-        run: |
-          cd Gonerino
-          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          mv packages/*.deb ${{ github.workspace }}/gonerino.deb
+      #- name: Build Gonerino
+      #  run: |
+      #    cd Gonerino
+      #    make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+      #    mv packages/*.deb ${{ github.workspace }}/gonerino.deb
 
       - name: Build YouGetCaption
         run: |
